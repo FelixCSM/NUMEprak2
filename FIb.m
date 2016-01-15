@@ -1,6 +1,5 @@
 function [ F ] = FIb( x )
-%FIB Summary of this function goes here
-%   Detailed explanation goes here
+%FIb implements the function F as in taks I) b)
 
 F(1)= -x(1) -x(1)^2 + 3*x(1)*x(2) + 2*x(2)*x(3);
 F(2)= 2*x(1)*x(2) + 3*x(2) + 3*x(3) -3;

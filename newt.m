@@ -1,6 +1,5 @@
 function [ F , X ] = newt( x, f, J, n, ged, gamma, rho, tol, check )
-%NEWT Summary of this function goes here
-%   Detailed explanation goes here
+%NEWT implements the Newton algorithm in both variants as asked in the task
 
 if not(ged)
     

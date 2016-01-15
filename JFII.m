@@ -1,6 +1,5 @@
 function [ J ] = JFII( x )
-%JFII Summary of this function goes here
-%   Detailed explanation goes here
+%JFII implements the Jacbian F' of the Function F as in task II)
 
 J(1,1) = cos(x(1)-2)*cos(x(2));
 J(1,2) = -sin(x(1)-2)*sin(x(2));

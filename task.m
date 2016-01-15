@@ -1,3 +1,10 @@
+%Konstantin Wehrhwein
+%Felix Völker
+%Für die Praktische Aufgabe IV im Modul NUME WS1015/16
+%implementiert alle vorgegebenen Parameter zum Testen des normalen und
+%gedämpften Newton Verfahrens
+
+
 % I)
 
 % a)

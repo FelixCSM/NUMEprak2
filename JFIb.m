@@ -1,6 +1,5 @@
 function [ J ] = JFIb( x )
-%JFIB Summary of this function goes here
-%   Detailed explanation goes here
+%JFIb implements the Jacbian F' of the Function F as in task I) b)
 
 J(1,1) = -1 -2*x(1) + 3*x(2);
 J(1,2) = 3*x(1) + 2*x(3);
