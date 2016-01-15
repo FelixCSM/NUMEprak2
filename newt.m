@@ -14,9 +14,25 @@ if not(ged)
     F = f(X);
     
 else
-    a = 0;
+    a = 1;
+    k=0;
+    X = x;
+    while (norm(X - x) > tol) && (norm(f(X)>tol)) && (k < n)
+        x = X;
+        deltx = gaus(J(x) , -f(x));
+        while norm(f(x + a*deltx))^2 > (1-gamma * a)*norm(f(x))^2
+            a = a * rho;
+        end
+        X = x + a*deltx;
+        k = k+1;
+        if (a/rho) < 1
+            a = a/rho;
+        else
+            a = 1;
+        end
+    end
+    end
+    F = f(X);
     
-    
-end
 end
 
