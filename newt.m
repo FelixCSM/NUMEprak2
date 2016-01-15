@@ -16,8 +16,8 @@ if not(ged)
 else
     a = 1;
     k=0;
-    X = x;
-    while (norm(X - x) > tol) && (norm(f(X)>tol)) && (k < n)
+    X = [5 ,5];
+    while (norm(X - x) > tol) && (norm(f(X))>tol) && (k < n)
         x = X;
         deltx = gaus(J(x) , -f(x));
         while norm(f(x + a*deltx))^2 > (1-gamma * a)*norm(f(x))^2
